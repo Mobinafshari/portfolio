@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+    &-logo{
+        font-family: fantasy;
+        color: 	#007bff;
+        letter-spacing: .2rem;
+    }
+  &-links{
+    display: flex;
+    gap: 3rem;
+  }
+  &-link {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+.navbar-links{
+    gap: 1rem;
+}
+}

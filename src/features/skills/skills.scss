@@ -1,0 +1,43 @@
+.skills {
+  margin-top: 5%;
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  &-paragraph {
+    color: #a9a9a9;
+    font-size: 1.1rem;
+    &-wrapper {
+      width: 60%;
+      margin: 1.5% auto;
+    }
+  }
+  &-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    row-gap: 2rem;
+    margin-top: 2%;
+  }
+}
+.skill {
+  text-align: center;
+  font-weight: bold;
+  & span{
+    position: relative;
+  &::before {
+    content: "";
+    width: 8px; 
+    height: 8px;
+    border-radius: 50%;
+    background-color: #b6e2ff; 
+    position: absolute;
+    left: -1rem; 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  }
+}
