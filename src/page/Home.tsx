@@ -8,7 +8,7 @@ function Home() {
       <Header />
       <AboutMe />
       <Skills />
-
+      
       <p style={{marginTop : "10rem" , textAlign : "center"}}>Projects soon...</p>
     </div>
   );

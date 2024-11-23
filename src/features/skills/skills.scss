@@ -9,9 +9,11 @@
   &-paragraph {
     color: #a9a9a9;
     font-size: 1.1rem;
+    letter-spacing: .1rem;
     &-wrapper {
       width: 60%;
       margin: 1.5% auto;
+
     }
   }
   &-wrapper {
@@ -20,7 +22,7 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
     row-gap: 2rem;
-    margin-top: 2%;
+    margin-top: 4%;
   }
 }
 .skill {
@@ -39,5 +41,17 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  }
+}
+
+@media (max-width : 768px) {
+  .skills-wrapper{
+    margin-top: 10%;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skills-paragraph-wrapper{
+    width: 100%;
+      margin-top: 5.5%;
   }
 }

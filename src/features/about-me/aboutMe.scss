@@ -1,10 +1,10 @@
 .about {
   display: grid;
+  height: 300px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
   margin-top: 3%;
-  height: 40vh;
   &-title {
     text-align: center;
     text-transform: uppercase;
@@ -13,5 +13,26 @@
   &-paragraph {
     color: #a9a9a9;
     font-size: 1.1rem;
+    letter-spacing: .1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    height: 450px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    &-title {
+      margin-top: 10rem;
+    }
+    height: 650px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1rem;
   }
 }
